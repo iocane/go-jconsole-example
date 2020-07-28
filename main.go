@@ -1,9 +1,9 @@
 package main
 
 /*
-	Example of calling a C library from Go and vice-versa. The J interpreter connects to a front-end through user
-	supplied callbacks. This Go program calls the J shared library functions to initialize the interpreter, then starts
-	a repl. The J interpreter passes the output to the Go function `GoOutput`.
+Example of calling a C library from Go and vice-versa. The J interpreter connects to a front-end through user supplied
+callbacks. This Go program calls the J shared library functions to initialize the interpreter, then starts a repl. The J
+interpreter passes the output to the Go function `GoOutput`.
 */
 
 // #cgo CFLAGS: -I./include

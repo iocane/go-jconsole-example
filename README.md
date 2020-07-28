@@ -7,6 +7,16 @@ the interpreter, then starts a repl. The J interpreter passes the output to the
 Go function `GoOutput` which prints it to the console. The J shared library and
 headers files are read from the present directory.
 
+* `c.go` Contains exported Go functions that can be called from C. This is in a
+separate file because exported Go functions cannot be defined in files with C
+definitions in the preamble.
+
+* `main.go` Contains the repl and C calls to initialize the interpreter.
+
+* `libj.so` The J shared library
+
+* `include/` Required J header files
+
 #### Running
 ```shell script
 go run c.go main.go
